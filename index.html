@@ -1,0 +1,651 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phan Nguyên Vũ | Portfolio Cá Nhân</title>
+
+    <!-- Google Fonts: Inter (Body) & Poppins (Heading) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Liên kết file CSS ngoại vi (Tiêu chí 17) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         1. HEADER & NAVBAR (Tiêu chí 1)
+         ========================================== -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Vũ<span>.Dev</span></a>
+
+            <nav class="navbar" id="navbar">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Trang chủ</a></li>
+                    <li><a href="#about" class="nav-link">Về tôi</a></li>
+                    <li><a href="#goals" class="nav-link">Mục tiêu</a></li>
+                    <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
+                    <li><a href="#resume" class="nav-link">Học vấn</a></li>
+                    <li><a href="#projects" class="nav-link">Dự án</a></li>
+                    <li><a href="#services" class="nav-link">Dịch vụ</a></li>
+                    <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Nút chuyển đổi Dark Mode (Tiêu chí 14) -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Chuyển chế độ Sáng/Tối" title="Đổi giao diện Sáng/Tối">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <!-- Nút mở menu trên Mobile (Tiêu chí 11 & 14) -->
+                <button class="menu-toggle" id="menuToggle" aria-label="Mở menu điều hướng">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==========================================
+             2. HERO SECTION (Đầu trang - Tiêu chí 1 & 2)
+             ========================================== -->
+        <section class="hero section" id="home">
+            <div class="container hero-container fade-in">
+                <!-- Ảnh đại diện hình tròn bên trái -->
+                <figure class="hero-avatar-wrapper">
+                    <img src="images/avatar.jpg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/400x400/1e3a8a/ffffff?text=Phan+Nguyen+Vu';"
+                         alt="Ảnh đại diện Phan Nguyên Vũ"
+                         class="hero-avatar">
+                    <span class="status-badge"><i class="fa-solid fa-circle-check"></i> Sẵn sàng nhận dự án</span>
+                </figure>
+
+                <!-- Nội dung bên phải: Tên lớn, Tagline, 2 nút CTA -->
+                <div class="hero-content">
+                    <p class="hero-greeting">Xin chào, tôi là</p>
+                    <h1 class="hero-title">Phan Nguyên Vũ</h1>
+                    <p class="hero-role">
+                        Sinh viên CNTT & Định hướng Kỹ sư Mạng / Web Developer — <strong>ĐH Giao thông vận tải TP.HCM (UTH)</strong>
+                    </p>
+                    <blockquote class="hero-tagline">
+                        "<span id="typingText">I Was In Hell Looking At Heaven.</span><span class="cursor">|</span>"
+                    </blockquote>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fa-solid fa-code-branch"></i> Xem dự án
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fa-solid fa-paper-plane"></i> Liên hệ ngay
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             3. ABOUT ME SECTION (Giới thiệu - Tiêu chí 2)
+             ========================================== -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Giới thiệu bản thân</span>
+                    <h2 class="section-title">Về tôi</h2>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Tôi là <strong>Phan Nguyên Vũ</strong>, sinh viên chuyên ngành Công nghệ thông tin (Quản trị mạng & Phát triển phần mềm) tại <strong>Trường Đại học Giao thông vận tải TP. Hồ Chí Minh (UTH)</strong>. Với tư duy hệ thống chặt chẽ cùng niềm đam mê xây dựng các ứng dụng web tốc độ cao và hạ tầng mạng an toàn, tôi luôn hướng tới việc tạo ra những sản phẩm công nghệ thực tiễn, tối ưu và dễ mở rộng.
+                        </p>
+                        <p>
+                            Trong quá trình học tập và thực hành dự án, tôi không ngừng rèn luyện kỹ năng lập trình <strong>HTML5, CSS3, JavaScript, Python, C++, T-SQL</strong> cũng như thiết kế kiến trúc mạng doanh nghiệp trên <strong>Cisco IOS</strong>. Tôi đề cao tính kỷ luật, code sạch (clean code) và khả năng giải quyết vấn đề độc lập lẫn làm việc nhóm.
+                        </p>
+                    </div>
+
+                    <!-- 3 thẻ thông tin có hiệu ứng đếm số khi cuộn đến -->
+                    <div class="stats-grid" id="statsSection">
+                        <article class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-briefcase"></i></div>
+                            <h3 class="stat-number"><span class="counter" data-target="1">0</span>+</h3>
+                            <p class="stat-label">Năm kinh nghiệm</p>
+                        </article>
+                        <article class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                            <h3 class="stat-number"><span class="counter" data-target="12">0</span>+</h3>
+                            <p class="stat-label">Dự án đã thực hiện</p>
+                        </article>
+                        <article class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-face-smile-beam"></i></div>
+                            <h3 class="stat-number"><span class="counter" data-target="100">0</span>%</h3>
+                            <p class="stat-label">Khách hàng & Đối tác hài lòng</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             4. CAREER GOALS (Mục tiêu nghề nghiệp - Tiêu chí 3)
+             ========================================== -->
+        <section class="goals section bg-alt" id="goals">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Định hướng phát triển</span>
+                    <h2 class="section-title">Mục tiêu nghề nghiệp</h2>
+                </div>
+
+                <div class="goals-grid">
+                    <article class="goal-card">
+                        <div class="goal-badge">Ngắn hạn (2026 - 2027)</div>
+                        <h3>Hoàn thiện chuyên môn & Tốt nghiệp loại Giỏi</h3>
+                        <p>Hoàn thành chương trình cử nhân CNTT tại UTH đúng tiến độ rút ngắn 3.5 năm với GPA mục tiêu từ 3.20/4.0 trở lên; nắm vững phát triển Full-stack Web và quản trị hạ tầng mạng thực chiến.</p>
+                    </article>
+
+                    <article class="goal-card">
+                        <div class="goal-badge">Trung hạn (1 - 3 năm tới)</div>
+                        <h3>Kỹ sư Hệ thống Mạng & Phát triển Phần mềm</h3>
+                        <p>Tham gia vận hành các hệ thống mạng doanh nghiệp quy mô lớn, phát triển các nền tảng phần mềm quản lý tự động hóa và chinh phục các chứng chỉ quốc tế về mạng & bảo mật (CCNA, Security+).</p>
+                    </article>
+
+                    <article class="goal-card">
+                        <div class="goal-badge">Dài hạn (3 - 5 năm tới)</div>
+                        <h3>Kiến trúc sư Hệ thống & An toàn thông tin</h3>
+                        <p>Trở thành chuyên gia thiết kế kiến trúc mạng - bảo mật và điều phối các dự án công nghệ quy mô cao, kết hợp giữa lập trình phần mềm và bảo vệ hạ tầng số.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             5. SKILLS SECTION (Kỹ năng chuyên môn - Tiêu chí 4)
+             ========================================== -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Năng lực công nghệ</span>
+                    <h2 class="section-title">Kỹ năng chuyên môn</h2>
+                </div>
+
+                <!-- 6 ô kỹ năng dạng card -->
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+                        <h3>HTML5 / CSS3 / JavaScript</h3>
+                        <p>Xây dựng giao diện web chuẩn Semantic, Responsive và tương tác DOM mượt mà.</p>
+                        <div class="skill-bar"><span style="width: 90%"></span></div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+                        <h3>Python & Mạng máy tính</h3>
+                        <p>Lập trình xử lý luồng video thời gian thực (OpenCV, UDP Socket) và thuật toán.</p>
+                        <div class="skill-bar"><span style="width: 85%"></span></div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+                        <h3>Quản trị mạng Cisco IOS</h3>
+                        <p>Thiết kế kiến trúc mạng WAN/LAN đa chi nhánh, định tuyến và cấu hình Switch/Router.</p>
+                        <div class="skill-bar"><span style="width: 88%"></span></div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3>Cơ sở dữ liệu T-SQL</h3>
+                        <p>Thiết kế lược đồ quan hệ, tối ưu truy vấn và quản lý giao dịch (Transactions) trên SQL Server.</p>
+                        <div class="skill-bar"><span style="width: 82%"></span></div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3>An toàn thông tin & Mật mã</h3>
+                        <p>Triển khai thuật toán mã hóa AES, RSA và chữ ký số ElGamal bảo vệ toàn vẹn dữ liệu.</p>
+                        <div class="skill-bar"><span style="width: 80%"></span></div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <h3>C++ & Hệ thống (Assembly/Git)</h3>
+                        <p>Nền tảng cấu trúc dữ liệu giải thuật vững chắc, quản lý mã nguồn chuyên nghiệp với Git/GitHub.</p>
+                        <div class="skill-bar"><span style="width: 85%"></span></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             6. EDUCATION & EXPERIENCE (Học vấn & Hoạt động - Tiêu chí 5)
+             ========================================== -->
+        <section class="resume section bg-alt" id="resume">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Hành trình phát triển</span>
+                    <h2 class="section-title">Học vấn & Hoạt động nổi bật</h2>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <span class="timeline-date">2024 - Hiện tại</span>
+                        <h3 class="timeline-title">Cử nhân Công nghệ Thông tin (Chuyên ngành Quản trị mạng)</h3>
+                        <p class="timeline-org"><i class="fa-solid fa-graduation-cap"></i> Trường Đại học Giao thông vận tải TP. Hồ Chí Minh (UTH)</p>
+                        <p class="timeline-desc">
+                            Hoàn thành hơn 83 tín chỉ chuyên ngành với lộ trình học vượt 3.5 năm. Tập trung nghiên cứu sâu về Thiết kế mạng doanh nghiệp, Công nghệ phần mềm, Lập trình Web và An toàn thông tin.
+                        </p>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="timeline-date">08/2026 - 10/2026</span>
+                        <h3 class="timeline-title">Phát triển Dự án RentFlow & Thiết kế mạng WAN Đa chi nhánh</h3>
+                        <p class="timeline-org"><i class="fa-solid fa-users-gear"></i> Trưởng nhóm kỹ thuật / Thành viên phát triển</p>
+                        <p class="timeline-desc">
+                            Xây dựng API và giao diện quản lý phòng trọ minh bạch RentFlow; đồng thời phối hợp nhóm 6 thành viên thiết kế, mô phỏng thành công kiến trúc mạng WAN kết nối Trụ sở TP.HCM và Chi nhánh Hà Nội trên Cisco Packet Tracer.
+                        </p>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span class="timeline-date">11/2025 - 07/2026</span>
+                        <h3 class="timeline-title">Nghiên cứu Truyền phát Video UDP & Mật mã học</h3>
+                        <p class="timeline-org"><i class="fa-solid fa-terminal"></i> Dự án học thuật chuyên sâu</p>
+                        <p class="timeline-desc">
+                            Xây dựng module truyền hình ảnh thời gian thực HexaCall bằng Python/OpenCV qua giao thức UDP và tự cài đặt các hệ mật mã AES, RSA, chữ ký số ElGamal không phụ thuộc thư viện ngoài.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             7. PROJECTS SECTION (Dự án nổi bật - Tiêu chí 6 & 14)
+             ========================================== -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Sản phẩm thực tế</span>
+                    <h2 class="section-title">Dự án nổi bật</h2>
+                </div>
+
+                <!-- Bộ lọc dự án tương tác bằng JS (Tiêu chí 14) -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">Tất cả</button>
+                    <button class="filter-btn" data-filter="web">Web & Phần mềm</button>
+                    <button class="filter-btn" data-filter="network">Mạng & Bảo mật</button>
+                </div>
+
+                <!-- Grid 3 cột (Responsive xuống 1 cột trên mobile) -->
+                <div class="projects-grid">
+                    <!-- Dự án 1 -->
+                    <article class="project-card" data-category="web">
+                        <div class="project-img-wrapper">
+                            <img src="images/project-1.jpg"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e3a8a/ffffff?text=RentFlow+Platform';"
+                                 alt="Dự án RentFlow">
+                            <div class="project-overlay">
+                                <button class="btn btn-primary btn-sm open-modal-btn" data-project="0">
+                                    <i class="fa-solid fa-eye"></i> Xem nhanh
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span>HTML5/CSS3</span>
+                                <span>JavaScript</span>
+                                <span>REST API</span>
+                            </div>
+                            <h3 class="project-title">RentFlow – Nền tảng Quản lý Phòng trọ</h3>
+                            <p class="project-desc">Hệ thống quản lý vận hành và minh bạch hóa thông tin phòng cho thuê, tích hợp API tạo phòng và giao diện trực quan.</p>
+                            <div class="project-footer">
+                                <button class="btn-link open-modal-btn" data-project="0">
+                                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                                <a href="https://github.com" target="_blank" rel="noopener" class="project-source" title="Source Code">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dự án 2 -->
+                    <article class="project-card" data-category="network">
+                        <div class="project-img-wrapper">
+                            <img src="images/project-2.jpg"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/0f172a/f97316?text=HexaCall+UDP+Stream';"
+                                 alt="Dự án HexaCall">
+                            <div class="project-overlay">
+                                <button class="btn btn-primary btn-sm open-modal-btn" data-project="1">
+                                    <i class="fa-solid fa-eye"></i> Xem nhanh
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>OpenCV</span>
+                                <span>UDP Socket</span>
+                            </div>
+                            <h3 class="project-title">HexaCall – Truyền phát Video qua Mạng</h3>
+                            <p class="project-desc">Module thu hình camera thời gian thực, nén khung hình JPEG và truyền tải độ trễ thấp qua giao thức UDP Socket.</p>
+                            <div class="project-footer">
+                                <button class="btn-link open-modal-btn" data-project="1">
+                                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                                <a href="https://github.com" target="_blank" rel="noopener" class="project-source" title="Source Code">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dự án 3 -->
+                    <article class="project-card" data-category="network">
+                        <div class="project-img-wrapper">
+                            <img src="images/project-3.jpg"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e3a8a/f97316?text=Enterprise+WAN+Design';"
+                                 alt="Thiết kế hệ thống mạng WAN">
+                            <div class="project-overlay">
+                                <button class="btn btn-primary btn-sm open-modal-btn" data-project="2">
+                                    <i class="fa-solid fa-eye"></i> Xem nhanh
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span>Cisco IOS</span>
+                                <span>WAN Architecture</span>
+                                <span>Packet Tracer</span>
+                            </div>
+                            <h3 class="project-title">Thiết kế Mạng WAN Doanh nghiệp Đa chi nhánh</h3>
+                            <p class="project-desc">Mô phỏng kiến trúc mạng WAN kết nối Trụ sở chính TP.HCM và Chi nhánh Hà Nội đảm bảo tính sẵn sàng và bảo mật cao.</p>
+                            <div class="project-footer">
+                                <button class="btn-link open-modal-btn" data-project="2">
+                                    Xem chi tiết <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                                <a href="https://github.com" target="_blank" rel="noopener" class="project-source" title="Tài liệu thiết kế">
+                                    <i class="fa-solid fa-diagram-project"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             8. CERTIFICATES, AWARDS & HOBBIES (Tiêu chí 7 & 14)
+             ========================================== -->
+        <section class="extras section bg-alt" id="extras">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Thông tin bổ sung</span>
+                    <h2 class="section-title">Chứng chỉ, Giải thưởng & Sở thích</h2>
+                </div>
+
+                <!-- Điều hướng Tabs bằng JS -->
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="tab-cert">
+                        <i class="fa-solid fa-certificate"></i> Chứng chỉ
+                    </button>
+                    <button class="tab-btn" data-tab="tab-award">
+                        <i class="fa-solid fa-trophy"></i> Giải thưởng
+                    </button>
+                    <button class="tab-btn" data-tab="tab-hobby">
+                        <i class="fa-solid fa-heart"></i> Sở thích cá nhân
+                    </button>
+                </div>
+
+                <div class="tabs-content">
+                    <!-- Tab 1: Chứng chỉ -->
+                    <div class="tab-pane active" id="tab-cert">
+                        <div class="info-list">
+                            <div class="info-item">
+                                <i class="fa-solid fa-network-wired"></i>
+                                <div>
+                                    <h4>Hoàn thành học phần Thiết kế Mạng & Quản trị Hệ thống Cisco</h4>
+                                    <p>Nắm vững định tuyến, chuyển mạch, VLAN, ACL và mô phỏng kiến trúc WAN trên Cisco Packet Tracer.</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-shield-virus"></i>
+                                <div>
+                                    <h4>Đang ôn luyện chứng chỉ Quốc tế CCNA & CompTIA Security+</h4>
+                                    <p>Mục tiêu hoàn thành chứng chỉ quản trị mạng và bảo mật quốc tế trước khi tốt nghiệp năm 2027.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab 2: Giải thưởng (Ghi rõ theo đúng hướng dẫn Tiêu chí 7) -->
+                    <div class="tab-pane" id="tab-award">
+                        <div class="info-list">
+                            <div class="info-item">
+                                <i class="fa-solid fa-award"></i>
+                                <div>
+                                    <h4>Giải thưởng cá nhân: Chưa có</h4>
+                                    <p>Hiện đang tập trung nâng cao điểm trung bình tích lũy (hiện đạt 3.06/4.0) hướng tới mục tiêu học bổng khuyến khích học tập và tốt nghiệp loại Giỏi (GPA ≥ 3.20).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab 3: Sở thích -->
+                    <div class="tab-pane" id="tab-hobby">
+                        <div class="hobby-grid">
+                            <div class="hobby-item">
+                                <i class="fa-solid fa-bicycle"></i>
+                                <h4>Đạp xe Fixed-Gear</h4>
+                                <p>3 năm kinh nghiệm đạp xe Fixed-gear (cấu hình 46T/13T) di chuyển hàng ngày và rèn luyện thể lực.</p>
+                            </div>
+                            <div class="hobby-item">
+                                <i class="fa-solid fa-dumbbell"></i>
+                                <h4>Gym & Boxing Striking</h4>
+                                <p>Duy trì lịch tập kháng lực Upper/Lower 4 buổi/tuần kết hợp đấm bao cát rèn phản xạ và kỷ luật cá nhân.</p>
+                            </div>
+                            <div class="hobby-item">
+                                <i class="fa-solid fa-book-open-reader"></i>
+                                <h4>Đọc Light Novel & Công nghệ</h4>
+                                <p>Theo dõi tiểu thuyết, tìm hiểu kiến trúc phần cứng flagship và trải nghiệm các giải pháp phần mềm mới.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             9. SERVICES SECTION (Dịch vụ cung cấp)
+             ========================================== -->
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Giải pháp chuyên nghiệp</span>
+                    <h2 class="section-title">Dịch vụ tôi cung cấp</h2>
+                </div>
+
+                <!-- 3 gói dịch vụ dạng card, gói giữa có badge "Phổ biến" -->
+                <div class="services-grid">
+                    <!-- Gói 1 -->
+                    <article class="service-card">
+                        <h3 class="service-name">Landing Page Cơ Bản</h3>
+                        <p class="service-price">1.500.000đ <span>/ dự án</span></p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Thiết kế 1 trang (Single Page) hiện đại</li>
+                            <li><i class="fa-solid fa-check"></i> Tương thích hoàn hảo Mobile & Tablet</li>
+                            <li><i class="fa-solid fa-check"></i> Hiệu ứng cuộn mượt & chuyển động CSS3</li>
+                            <li><i class="fa-solid fa-check"></i> Tối ưu tốc độ tải trang & SEO cơ bản</li>
+                            <li><i class="fa-solid fa-check"></i> Bàn giao toàn bộ source code sạch</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline btn-block">Đăng ký tư vấn</a>
+                    </article>
+
+                    <!-- Gói 2: Nổi bật (Phổ biến) -->
+                    <article class="service-card featured">
+                        <span class="popular-badge">Phổ biến</span>
+                        <h3 class="service-name">Website Chuyên Nghiệp</h3>
+                        <p class="service-price">3.500.000đ <span>/ dự án</span></p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Giao diện độc quyền theo yêu cầu riêng</li>
+                            <li><i class="fa-solid fa-check"></i> Tích hợp Dark Mode & Tương tác JS nâng cao</li>
+                            <li><i class="fa-solid fa-check"></i> Kết nối API & Cơ sở dữ liệu SQL/Backend</li>
+                            <li><i class="fa-solid fa-check"></i> Kiểm tra dữ liệu Form & Bảo mật đầu vào</li>
+                            <li><i class="fa-solid fa-check"></i> Hỗ trợ kỹ thuật & Bảo hành 3 tháng</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary btn-block">Chọn gói này</a>
+                    </article>
+
+                    <!-- Gói 3 -->
+                    <article class="service-card">
+                        <h3 class="service-name">Tư Vấn Mạng & Hệ Thống</h3>
+                        <p class="service-price">2.000.000đ <span>/ dự án</span></p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Thiết kế sơ đồ mạng LAN/WAN doanh nghiệp</li>
+                            <li><i class="fa-solid fa-check"></i> Mô phỏng & Kiểm thử trên Packet Tracer</li>
+                            <li><i class="fa-solid fa-check"></i> Cấu hình định tuyến, chia VLAN & ACL</li>
+                            <li><i class="fa-solid fa-check"></i> Tư vấn giải pháp mã hóa & An toàn dữ liệu</li>
+                            <li><i class="fa-solid fa-check"></i> Tài liệu hướng dẫn vận hành chi tiết</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline btn-block">Liên hệ báo giá</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             10. CONTACT SECTION (Liên hệ - Tiêu chí 15)
+             ========================================== -->
+        <section class="contact section bg-alt" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Kết nối ngay</span>
+                    <h2 class="section-title">Liên hệ với tôi</h2>
+                </div>
+
+                <div class="contact-wrapper">
+                    <!-- Bên trái: Thông tin liên hệ -->
+                    <aside class="contact-info">
+                        <h3>Thông tin liên lạc trực tiếp</h3>
+                        <p>Bạn có dự án cần hợp tác hoặc muốn trao đổi thêm về công nghệ? Hãy liên hệ với tôi qua các kênh dưới đây:</p>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:vuphan20072006@gmail.com">vuphan20072006@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                            <div>
+                                <h4>Số điện thoại</h4>
+                                <a href="tel:0389182533">0389 182 533</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h4>Địa chỉ</h4>
+                                <p>TP. Hồ Chí Minh, Việt Nam</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h4>Mạng xã hội</h4>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/xiaopaozx" target="_blank" rel="noopener" aria-label="Facebook">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com/_nguyn.vuzz" target="_blank" rel="noopener" aria-label="Instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Bên phải: Form liên hệ có kiểm tra dữ liệu bằng JS -->
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="fullName">Họ và tên <span>*</span></label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Nhập họ và tên của bạn">
+                            <small class="error-msg" id="nameError"></small>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email <span>*</span></label>
+                                <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                                <small class="error-msg" id="emailError"></small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Số điện thoại <span>*</span></label>
+                                <input type="tel" id="phone" name="phone" placeholder="0389182533">
+                                <small class="error-msg" id="phoneError"></small>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Nội dung tin nhắn <span>*</span></label>
+                            <textarea id="message" name="message" rows="4" placeholder="Nhập nội dung công việc hoặc lời nhắn của bạn..."></textarea>
+                            <small class="error-msg" id="messageError"></small>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                            <i class="fa-solid fa-paper-plane"></i> Gửi tin nhắn
+                        </button>
+
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================
+         11. FOOTER (Chân trang)
+         ========================================== -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>© <span id="currentYear">2026</span> <strong>Phan Nguyên Vũ</strong>. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/xiaopaozx" target="_blank" rel="noopener" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/_nguyn.vuzz" target="_blank" rel="noopener" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal hiển thị chi tiết dự án (Tiêu chí 14 & 19) -->
+    <div class="modal-backdrop" id="projectModal">
+        <div class="modal-box">
+            <button class="modal-close" id="closeModal" aria-label="Đóng cửa sổ">&times;</button>
+            <h3 id="modalTitle">Tên dự án</h3>
+            <p class="modal-tech" id="modalTech"></p>
+            <p class="modal-desc" id="modalDesc"></p>
+            <div class="modal-Role">
+                <strong>Vai trò & Kết quả:</strong>
+                <p id="modalOutcome"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nút cuộn lên đầu trang (Scroll to Top - Tiêu chí 14) -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Cuộn lên đầu trang">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Liên kết file JavaScript ngoại vi (Tiêu chí 17) -->
+    <script src="js/script.js"></script>
+</body>
+</html>
